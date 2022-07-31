@@ -7,6 +7,8 @@ import com.enterprise.todoapp.service.Dto.TaskInDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class TaskService {
     @Autowired
@@ -23,5 +25,9 @@ public class TaskService {
 
         Task task = mapper.map(taskInDTO);
         return this.repository.save(task);
+    }
+
+    public List<Task> findAll() {
+        return this.repository.findAll();
     }
 }
