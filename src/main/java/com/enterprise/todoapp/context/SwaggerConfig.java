@@ -1,4 +1,4 @@
-package com.sacavix.todoapp.context;
+package com.enterprise.todoapp.context;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -28,10 +28,10 @@ public class SwaggerConfig {
     private ApiInfo apiInfo() {
         return new ApiInfo(
                 "Todo API",
-                "La API REST de todoapp.",
+                "La API REST de ToDo App.",
                 "v1",
                 "Terms of service",
-                new Contact("Samuel R", "", ""),
+                new Contact("", "", ""),
                 "License of API", "API license URL", Collections.emptyList());
     }
 }
