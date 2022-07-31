@@ -2,6 +2,7 @@ package com.enterprise.todoapp.service;
 
 import com.enterprise.todoapp.mapper.TaskInDTOToTask;
 import com.enterprise.todoapp.persistence.Entity.Task;
+import com.enterprise.todoapp.persistence.Entity.TaskStatus;
 import com.enterprise.todoapp.persistence.repository.TaskRepository;
 import com.enterprise.todoapp.service.Dto.TaskInDTO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,5 +30,9 @@ public class TaskService {
 
     public List<Task> findAll() {
         return this.repository.findAll();
+    }
+
+    public List<Task> findAllByTaskStatus(TaskStatus status) {
+        return this.repository.findAllByTaskStatus(status);
     }
 }
