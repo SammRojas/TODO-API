@@ -24,5 +24,6 @@ API REST para la gestion de tareas personales
 2. Importar como proyecto maven
 3. Instalar dependencias necesarias las cuales están en el archivo POM.xml
 4. Ejecutar el proyecto
-5. Abrir la herramienta de swagger en el explorador http://localhost:8080/swagger-ui.html#
+5. Abrir la herramienta de swagger en el navegador http://localhost:8080/swagger-ui.html#
+6. Para aceder a la base de datos h2 desde el navegador:  --->  http://localhost:8080/h2-console
 
